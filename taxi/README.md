@@ -47,7 +47,7 @@ Not all of the CSV files have the same column names and the same data. Examples:
 
 In 2009 we have _vendor_name_ and later _vendor_id_. I merged these into _vendor_name_. The [data dictionary](https://www1.nyc.gov/assets/tlc/downloads/pdf/data_dictionary_trip_records_yellow.pdf) helps to identify the meaning of some vendor ids. This column has its own sym file, so the ids can be changed to names when the HDB building is done if necessary.
 
-Between 2009.01 and 2016.06 the CSVs have pick-up/drop-off longitude/latitude coordinates, later only zone ids. Both are present in the table schema, the _pickup_zone_ and _dropoff_zone_ columns are linked with the _zone_id_ table.
+Before 2016 July the CSVs have pick-up/drop-off longitude/latitude coordinates, later only zone ids. Both are present in the table schema, the _pickup_zone_ and _dropoff_zone_ columns are linked with the _zone_id_ table.
 
 Column name variations, types and prefered colum names are specified at the top of _build.q_ in the _all_cols_ table.
 
