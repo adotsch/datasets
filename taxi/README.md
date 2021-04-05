@@ -53,7 +53,7 @@ In 2009 we have _vendor_name_ and later _vendor_id_. I merged these into _vendor
 
 Before 2016 July the CSVs have pick-up/drop-off longitude/latitude coordinates, later only zone ids. Both are present in the table schema, the _pickup_zone_ and _dropoff_zone_ columns are linked with the _zone_id_ table.
 
-Column name variations, types and prefered colum names are specified at the top of _build.q_ in the _all_cols_ table.
+Column name variations, types and prefered colum names are specified at the top of _build.q_ in the [_all_cols_](https://github.com/adotsch/datasets/blob/0a3dffb86434ad4a822758ef00bfa5e9a7f7d4f4/taxi/build.q#L2) table.
 
 ### Malformend CSV files
 
