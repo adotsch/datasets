@@ -5,7 +5,7 @@ The available data for download (as of this writing) is 12 years (2009-2020) and
 
 ## Motivation
 
-Of course it's [Mark Litwintschik's kdb+/q blog post](https://tech.marksblogg.com/billion-nyc-taxi-kdb.html) in his benchmark series. I wanted to get hold on this data in some form, but I didn't want to go through his path as the same source data can be used directly to build a KDB database.
+Of course it's [Mark Litwintschik's kdb+/q blog post](https://tech.marksblogg.com/billion-nyc-taxi-kdb.html) in his benchmark series. It was only 1.1 billion back then, now it is half billion more. I wanted to get hold on this data in some form, but I didn't want to go through his path as the same source data can be used directly to build a KDB database.
 
 ## Prerequisites
 
