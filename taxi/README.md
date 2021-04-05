@@ -33,9 +33,9 @@ The script downloads the data into the _download_ folder and moves finished file
 
 ## Build
 
-Run _q build.q_ to build the HDB. You can use _-s threads_ option to speed up parsing the csv files (useful only when you already have the CSV files). The build script monitors the _watch_ folder and precesses every _yellow_tripdata_*_.csv_ file. Processes files are moved to the _done_ folder.
+Run _q build.q_ to build the HDB. You can use _-s threads_ option to speed up parsing the csv files (useful only when you already have the CSV files). The build script monitors the _watch_ folder and precesses every _yellow_tripdata_*_.csv_ file. Processed files are moved to the _done_ folder.
  
-You can run the build script in parallel with the dl script.
+You can run the build script in parallel with the dl script, this way the HDB will be ready soon after you finished downloading.
 
 ## Issues encountered
 
