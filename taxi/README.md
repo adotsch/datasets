@@ -14,7 +14,7 @@ Of course it's [Mark Litwintschik's kdb+/q blog post](https://tech.marksblogg.co
  * A modern 32bit or 64bit version of KDB from KX, eg. 3.5-4.0.
  * The scrips are developed for Linux.
  * The downloader uses wget.
- * You will need about 500GB free space for the downloaded CSVs and the uncompressed HDB.
+ * You will need about 500GB free space for the downloaded CSVs and a uncompressed HDB.
 
 ## Quick start
 
