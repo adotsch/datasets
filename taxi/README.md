@@ -57,7 +57,7 @@ Column name variations, types and prefered colum names are specified at the top 
 
 ### Malformend CSV files
 
-There are empty lines in almost all the CSVs and various extra commas in some of the files. All of this is fixed in the _cleanx_ function in _build.q_.
+There are empty lines in almost all the CSVs and various extra commas in some of the files. All of this is fixed in the [_cleanx_](https://github.com/adotsch/datasets/blob/cdeacaa9a489d64796318378f4d28db2eecf385a/taxi/build.q#L38) function in _build.q_.
 
 There is a *.out file created during parsing in the watch folder collecting all the lines that don't have the right number of commas and the file is later deleted if it only has one empty line. Currenly this functionlaity has no use because we fixed all the issues, but it may be usefull for spoting issues in future data.
 
