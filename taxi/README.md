@@ -9,6 +9,7 @@ Of course it's [Mark Litwintschik's kdb+/q blog post](https://tech.marksblogg.co
 
 ## Prerequisites
 
+ * A modern 32bit or 64bit version of KDB, eg. 3.5-4.0.
  * The scrips are developed for Linux.
  * The downloader uses wget.
  * You will need about 500GB free space for the downloaded CSVs and the uncompressed HDB.
@@ -70,6 +71,10 @@ Some trips seeming go backward in time (Marty McFly?) or take too long. These re
 Some colums are enumeration by design, such as _vendor_name_, _rate_code_, _payment_type_. These columns have their own sym file, so the codes can be changed to proper names in the sym file when the HDB is built.
 
 ## Q&A
+
+### How long does it take the build the HDB?
+
+Depends on your CPU and HDD/SSD. It builds in about 2h on my machine (AMD Ryzen 5 2600 Six-Core Processor, 3.4GHz, 16 GB RAM, 1TB Toshiba HDD).
 
 ### How to build a HDB with only a subset of the columns?
 
