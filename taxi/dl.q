@@ -5,7 +5,7 @@ system"mkdir -p download watch";
 
 dl:{[m]
 	f:ssr[file_temp;"MONTH";ssr[string m;".";"-"]];
-	system"wget -c -P download --limit-rate 512k ",base_url,f," && mv download/",f," watch/";
+	system"wget -c -P download ",base_url,f," && mv download/",f," watch/";
  }':
  
 -1 ("";"Download data with:";"q)dl month(s)");
