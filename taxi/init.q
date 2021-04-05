@@ -5,8 +5,8 @@ if[1<n;
 	1"Segment directory (abs path, default:",sd,")? ";s:read0 0;if[s~"";s:sd];
 	`:db/par.txt 0: (s,"/"),/:string til n];
 
-z:`zone_id`borough`zone xcol ("jss";1#csv)0:`$":meta/taxi_zone_lookup.csv"
-z:`zone xkey `zone_id xasc z upsert (0;`;`)
+z:`zone_id`borough`zone`service_zone xcol ("jsss";1#csv)0:`$":meta/taxi_zone_lookup.csv"
+z:`zone xkey `zone_id xasc z upsert (0;`Unknown;`NA;`$"N/A")
 `:db/zone_id set z;
 
 \\
