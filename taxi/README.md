@@ -39,11 +39,26 @@ You can run the build script in parallel with the dl script, this way the HDB wi
 
 ## Issues encountered
 
-TBC...
+All of the below issues are dealt with in the _build.q_ script.
 
-### Column name variations
+### Column name variations and different data
+
+Not all of the CSV files have the same column names and the same data. Examples:
+
+In 2009 we have _vendor_name_ and later _vendor_id_. I merged these into _vendor_name_. The [data dictionary](https://www1.nyc.gov/assets/tlc/downloads/pdf/data_dictionary_trip_records_yellow.pdf) helps to identify the meaning of some vendor ids. This column has its own sym file, so the ids can be changed to names when the HDB building is done if necessary.
+
+Between 2009.01 and 2016.06 the CSVs have pick-up/drop-off longitude/latitude coordinates, later only zone ids. Both are present in the table schema, the _pickup_zone_ and _dropoff_zone_ columns are linked with the _zone_id_ table.
+
+Column name variations, types and prefered colum names are specified at the top of _build.q_ in the _all_cols_ table.
+
 ### Malformend CSV files
-### Lat/long vs. Zones
+
+There are empty lines in almost all the CSVs and various extra commas in some of the files. All of this is fixed in the _cleanx_ function in _build.q_.
+
+There is a *.out file created during parsing in the watch folder collecting all the lines that don't have the right number of commas and the file is later deleted if it only has one empty line. Currenly this functionlaity has no use because we fixed all the issues, but it may be usefull for spoting issues in future data.
+
 ### Issues with timestamps
+
+Some trips seeming go backward in time (Marty McFly?) or take too long. These records are identified in the _cleant_ function and moved into the _taxi_dirty_ table.
 
 ## How to build a HDB with only a subset of the columns
