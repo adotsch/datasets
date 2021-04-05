@@ -42,6 +42,10 @@ Run _q build.q_ to build the HDB. You can use _-s threads_ option to speed up pa
  
 You can run the build script in parallel with the dl script, this way the HDB will be ready soon after you finished downloading.
 
+## Enumerations
+
+Some colums are enumeration by design, such as _vendor_name_, _rate_code_, _payment_type_. These columns have their own sym file, so the codes can be changed to proper names in the sym file when the HDB is built.
+
 ## Issues encountered
 
 All of the below issues are dealt with in the _build.q_ script.
@@ -65,10 +69,6 @@ There is a *.out file created during parsing in the watch folder collecting all 
 ### Issues with timestamps
 
 Some trips seeming go backward in time (Marty McFly?) or take too long. These records are identified in the [_cleant_](https://github.com/adotsch/datasets/blob/cdeacaa9a489d64796318378f4d28db2eecf385a/taxi/build.q#L52) function and moved into the _taxi_dirty_ table.
-
-## Enumerations
-
-Some colums are enumeration by design, such as _vendor_name_, _rate_code_, _payment_type_. These columns have their own sym file, so the codes can be changed to proper names in the sym file when the HDB is built.
 
 ## Q&A
 
