@@ -63,7 +63,7 @@ There is a *.out file created during parsing in the watch folder collecting all 
 
 ### Issues with timestamps
 
-Some trips seeming go backward in time (Marty McFly?) or take too long. These records are identified in the _cleant_ function and moved into the _taxi_dirty_ table.
+Some trips seeming go backward in time (Marty McFly?) or take too long. These records are identified in the [_cleant_](https://github.com/adotsch/datasets/blob/cdeacaa9a489d64796318378f4d28db2eecf385a/taxi/build.q#L52) function and moved into the _taxi_dirty_ table.
 
 ## Enumerations
 
