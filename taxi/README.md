@@ -3,6 +3,10 @@
 These scripts will download and build a KDB database of the [NYC Taxi and Limousine Commission public taxi ride dataset](https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page). The database will only include the yellow taxi data.
 The available data for download (as of this writing) is 12 years (2009-2020) and about 1.6 Billion rows.
 
+## Motivation
+
+Of course it's [Mark Litwintschik's kdb+/q blog post](https://tech.marksblogg.com/billion-nyc-taxi-kdb.html) in his benchmark series. I wanted to get hold on this data in some form, but I didn't want to go through his path as the same source data can be used directly to build a KDB database.
+
 ## Prerequisites
 
  * The scrips are developed for Linux.
