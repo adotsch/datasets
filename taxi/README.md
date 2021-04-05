@@ -43,7 +43,7 @@ TBC...
 
 ### Column name variations
 ### Malformend CSV files
-### Lacations vs. Zones
+### Lat/long vs. Zones
 ### Issues with timestaps
 
 ## How to build a HDB with only a subset of the columns
