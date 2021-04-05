@@ -72,6 +72,10 @@ Some trips seeming go backward in time (Marty McFly?) or take too long. These re
 
 ## Q&A
 
+### How to re-bould the HDB?
+
+Just delete _db_ and your segment folders, run _q init.q_ again, move all the CSVs into the _watch_ folder and start _q build.q -s N_, where N is the max thread num that makes sense.
+
 ### How long does it take the build the HDB?
 
 Depends on your CPU and HDD/SSD. It builds in about 2h on my machine (AMD Ryzen 5 2600 Six-Core Processor, 3.4GHz, 16 GB RAM, 1TB Toshiba HDD).
