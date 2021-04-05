@@ -44,6 +44,6 @@ TBC...
 ### Column name variations
 ### Malformend CSV files
 ### Lat/long vs. Zones
-### Issues with timestaps
+### Issues with timestamps
 
 ## How to build a HDB with only a subset of the columns
