@@ -69,6 +69,12 @@ Some trips seeming go backward in time (Marty McFly?) or take too long. These re
 
 Some colums are enumeration by design, such as _vendor_name_, _rate_code_, _payment_type_. These columns have their own sym file, so the codes can be changed to proper names in the sym file when the HDB is built.
 
-## How to build a HDB with only a subset of the columns
+## Q&A
+
+### How to build a HDB with only a subset of the columns
 
 It is possible to build the HDB from only a subset of the data, but it is also possible to ignore certain colunms. All you have to do is to change the type of the column to be ignored to " " in _build.q_ in the _all_cols_ table at the begining of the script. 
+
+### How to build a comressed HDB
+
+Just add you line to the _build.q_ script, for example _.z.zd:17 2 1_ will be a good space/speed compromise.
