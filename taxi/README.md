@@ -72,7 +72,7 @@ Some trips seeming go backward in time (Marty McFly?) or take too long. These re
 
 ## Q&A
 
-### How to re-bould the HDB?
+### How to re-build the HDB?
 
 Just delete _db_ and your segment folders, run _q init.q_ again, move all the CSVs into the _watch_ folder and start _q build.q -s N_, where N is the max thread num that makes sense.
 
