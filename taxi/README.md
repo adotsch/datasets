@@ -37,3 +37,13 @@ Run _q build.q_ to build the HDB. You can use _-s threads_ option to speed up pa
  
 You can run the build script in parallel with the dl script.
 
+## Issues encountered
+
+TBC...
+
+### Column name variations
+### Malformend CSV files
+### Lacations vs. Zones
+### Issues with timestaps
+
+## How to build a HDB with only a subset of the columns
