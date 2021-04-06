@@ -1,3 +1,6 @@
+![alt text](https://cbsnews2.cbsistatic.com/hub/i/r/2020/01/31/46e5c59f-7f32-4767-a09b-03444bd9442b/thumbnail/1200x630/610e469fbff1197632152e376dad2bd7/gettyimages-1171671.jpg "")
+
+
 # 1.6 Billion Taxi Rides
 
 These scripts will download and build a KDB database of the [NYC Taxi and Limousine Commission public taxi ride dataset](https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page). The database will only include the yellow taxi data.
