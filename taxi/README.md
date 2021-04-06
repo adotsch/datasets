@@ -22,7 +22,7 @@ Of course it's [Mark Litwintschik's kdb+/q blog post](https://tech.marksblogg.co
 ## Quick start
 
  * Run _q init.q_ and press Enter, or specify number of segments and the path to the segments folder.
- * Run _q dl.q_ and then _dl 2019.01m + til 144_ to start downloading all data between 2009-2020.
+ * Run _q dl.q_ and then _dl 2009.01m + til 144_ to start downloading all data between 2009-2020.
  * Run _q build.q_ in parallel with _dl.q_, it will add each month of data to the HDB as it is downloaded.
 
 ## Init
@@ -37,7 +37,7 @@ You can more the db folder to another location if you want, just don't forget to
 
 Run _q dl.q_ or _q dl.q -s N_ if you want to download on N threads (the console output will be messy).
 
-Use the _dl_ function to download data, eg. _dl 2009.01m + til 12_ will download all data for 2009, or _dl 2019.01m + til 12*12_ will download all data between 2009-2020. 
+Use the _dl_ function to download data, eg. _dl 2009.01m + til 12_ will download all data for 2009, or _dl 2009.01m + til 12*12_ will download all data between 2009-2020. 
 
 The script downloads the data into the _download_ folder and moves finished files into the _watch_ folder.
 
